@@ -1,0 +1,16 @@
+[
+{
+  "modid": "Sensitivity-changer",
+  "name": "Sensitivity Changer",
+  "description": "change with arrow keys!",
+  "version": "",
+  "mcversion": "1.8.9, 1.9.4, 1.10.2",
+  "url": "https://github.com/S4WA/Sensitivity-Changer",
+  "updateUrl": "",
+  "authorList": ["S4WA"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
