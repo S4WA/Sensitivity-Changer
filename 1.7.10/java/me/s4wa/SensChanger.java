@@ -3,15 +3,8 @@ package me.s4wa;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.settings.KeyBinding;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
+import net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType;
 import net.minecraftforge.common.MinecraftForge;
-
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
 
 import org.lwjgl.input.Keyboard;
 
@@ -56,7 +49,7 @@ public class SensChanger
 		}
 		if (Keyboard.isKeyDown(bindKeyUp.getKeyCode()) || Keyboard.isKeyDown(bindKeyDown.getKeyCode())) {
 			text = ((int)(mc.gameSettings.mouseSensitivity * 200.0F)) + "%";
-			mc.fontRenderer.drawString(text, 10, 10, 0xFFFFFF);
+			if (event.type == ElementType.HELMET) mc.fontRenderer.drawString(text, 10, 10, 0xFFFFFF);
 		}
 	}
 }
